@@ -40,7 +40,7 @@ public class Course {
         this.title = title;
     }
 
-    @Column(name = "level")
+    @Enumerated(value = EnumType.STRING)
     public Level getLevel() {
         return level;
     }

@@ -13,6 +13,8 @@ public class Runner {
         Course course2 = new Course("Coding", Level.HNC);
         DBHelper.save(course2);
         Course course3 = new Course("Software Development", Level.PhD);
+        DBHelper.save(course3);
+
 
         Lesson lesson1 = new Lesson("Into to Coding", 12, course2);
         DBHelper.save(lesson1);

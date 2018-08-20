@@ -86,10 +86,6 @@ public class Student {
         this.course = course;
     }
 
-//    public void addCourse(Course course) {
-//        this.course.add(course);
-//    }
-
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @ManyToMany
     @JoinTable(name = "student_lessons",

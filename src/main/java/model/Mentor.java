@@ -37,7 +37,8 @@ public class Mentor {
         this.name = name;
     }
 
-    @OneToOne(mappedBy = "mentor", fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "student_id", nullable = false)
     public Student getStudent() {
         return student;
     }
